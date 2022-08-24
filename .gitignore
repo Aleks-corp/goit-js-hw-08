@@ -50,6 +50,9 @@ typings/
 # Optional npm cache directory
 .npm
 
+# parcel-bundler cache (https://parceljs.org/)
+.parcel-cache
+
 # Optional eslint cache
 .eslintcache
 
