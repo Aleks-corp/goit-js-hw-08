@@ -1,9 +1,9 @@
-import debounce from 'lodash.debounce';
+import throttle from 'lodash.throttle';
 
 const FEEDBACK_LS_KEY = 'feedback-form-state';
 
 const formInput = document.querySelector('.feedback-form');
-formInput.addEventListener('input', debounce(onInputFormField, 500));
+formInput.addEventListener('input', throttle(onInputFormField, 500));
 formInput.addEventListener('submit', onSubmitFormInput);
 
 function insertFormFromLocStor() {
